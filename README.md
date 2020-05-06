@@ -1,4 +1,4 @@
-# python-programming-hp
+# Python Problems 
 It includes python solutions for some of the problem statements.
 
 Following are the projects mentioned:
