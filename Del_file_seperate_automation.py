@@ -34,8 +34,8 @@ for index, row in tbl_df.iterrows():
     print(str2)
     str1 = row[0].split('.')[1].split(' ')[0]
     filename = "V3.0_"+str2+"__RENAME_TABLE_"+str1+".sql"
-    Path(os.path.join("Deloitte_Files",str1)).mkdir(parents=True, exist_ok=True)
-    f = open(os.path.join("Deloitte_Files",str1,filename), 'w')
+    Path(os.path.join("DFiles",str1)).mkdir(parents=True, exist_ok=True)
+    f = open(os.path.join("DFiles",str1,filename), 'w')
     f.write(CT_STR)
     f.write(row[0])
     f.write("\n")
@@ -55,8 +55,8 @@ for index, row in seq_df.iterrows():
     str1 = row[0].split('.')[1].split(' ')[0]
     str1 = str1.replace('_SEQ','')
     filename = "V3.0_"+str2+"__RENAME_SEQ_"+str1+".sql"
-    Path(os.path.join("Deloitte_Files",str1)).mkdir(parents=True, exist_ok=True)
-    f = open(os.path.join("Deloitte_Files",str1,filename), 'w')
+    Path(os.path.join("DFiles",str1)).mkdir(parents=True, exist_ok=True)
+    f = open(os.path.join("DFiles",str1,filename), 'w')
     f.write(CT_STR)
     f.write(row[0])
     f.write("\n")
