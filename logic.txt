@@ -1,0 +1,8 @@
+1. split on the basis of ;
+2. Naming of file: "V3.0_20210225".+time(increment by 1)+"__RENAME_"+(if keyword sequence then SEQ else TABLE)+(tablename)+".sql"
+3. Before inserting this script add static value 
+USE DATABASE $${flyway:database};
+USE SCHEMA FACETS_DA_INT;
+
+4. Put rename tables and rename sequence file in their respective folders
+5. Folder name: TableName
